@@ -1,0 +1,55 @@
+<div id="answer-container" class="container">
+
+  <div class="row justify-content-center">
+
+    <div class="col-12 text-center">
+      <h1 class="mt-4">Stupid Coaching</h1>
+    </div>
+
+  <div class="col-6 my-5">
+
+    <div id="question" class="d-flex justify-contents-between align-items-center my-3">
+      <div class="d-flex border-left" style="height: 70px; width: 20px">
+      </div>
+
+      <blockquote class="blockquote mb-0">
+        <p><%= @question %></p>
+        <footer class="blockquote-footer"><cite>You</cite></footer>
+      </blockquote>
+    </div>
+
+    <div id="answer" class="d-flex justify-contents-between align-items-center my-3 alert-warning">
+      <div class="d-flex border-left" style="height: 70px; width: 20px">
+      </div>
+
+      <blockquote class="blockquote mb-0">
+        <p class="text-bold"><%= @answer %></p>
+        <footer class="blockquote-footer"><cite>Your coach</cite></footer>
+      </blockquote>
+    </div>
+
+    <%= link_to 'Ask a new question', ask_path , class: "no-decoration btn btn-primary"%>
+
+
+  </div>
+
+
+
+    <%# <div class="col-6">
+      <form action="/answer" data-turbo="false" class="my-5">
+        <label for="question" class="form-label">Ask your coach anything</label>
+
+          <div class="row">
+            <div class="col-10 pe-0">
+              <input type="text" name="question" class="form-control">
+            </div>
+            <div class="col-2 ps-0">
+              <input type="submit" value="Ask!" class="btn btn-primary">
+            </div>
+          </div>
+
+      </form>
+    </div> %>
+
+  </div>
+</div>
